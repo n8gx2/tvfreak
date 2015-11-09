@@ -1,0 +1,203 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ogodoy.tvfreak.PartidoActivity">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:text="idEstado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtidEstado"
+            android:layout_below="@+id/txtciudad"
+            android:layout_alignParentStart="true"
+            android:layout_row="0"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="estado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtestado"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtidVisita"
+            android:layout_toLeftOf="@+id/imgescudoVisita"
+            android:layout_row="0"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtfecha"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_row="0"
+            android:layout_column="2" />
+
+        <TextView
+            android:text="idPartido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtidPartido"
+            android:layout_below="@+id/txthoraEstado"
+            android:layout_toEndOf="@+id/imgescudoLocal"
+            android:layout_row="1"
+            android:layout_column="0" />
+
+        <TextView android:text="horaEstado" android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txthoraEstado"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imgescudoLocal"
+            android:layout_row="1"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="ciudad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtciudad"
+            android:layout_below="@+id/txthora"
+            android:layout_alignParentStart="true"
+            android:layout_row="2"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="estadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtestadio"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtidArbitro"
+            android:layout_toLeftOf="@+id/imgescudoVisita"
+            android:layout_row="2"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="idArbitro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtidArbitro"
+            android:layout_below="@+id/imgescudoVisita"
+            android:layout_toStartOf="@+id/imgescudoVisita"
+            android:layout_row="3"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="nombreArbitro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtnombreArbitro"
+            android:layout_below="@+id/txtidEstado"
+            android:layout_alignParentStart="true"
+            android:layout_row="3"
+            android:layout_column="1" />
+
+        <ImageView
+            android:text="idArbitro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgescudoVisita"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@+id/txtnombreArbitro"
+            android:layout_alignEnd="@+id/txtidPartido"
+            android:layout_row="4"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="idVisita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtidVisita"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtestadio"
+            android:layout_toLeftOf="@+id/imgescudoVisita"
+            android:layout_row="4"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="nombreVisita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtnombreVisita"
+            android:layout_below="@+id/txtnombreLocal"
+            android:layout_alignEnd="@+id/txtnombreLocal"
+            android:layout_row="4"
+            android:layout_column="2" />
+
+        <ImageView
+            android:text="idArbitro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgescudoLocal"
+            android:src="@mipmap/ic_launcher"
+            android:layout_below="@+id/txtnombreArbitro"
+            android:layout_alignParentStart="true"
+            android:layout_row="5"
+            android:layout_column="0" />
+
+        <TextView
+            android:text="idLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtidLocal"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtestadio"
+            android:layout_toLeftOf="@+id/imgescudoVisita"
+            android:layout_row="5"
+            android:layout_column="1" />
+
+        <TextView
+            android:text="nombreLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtnombreLocal"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_row="5"
+            android:layout_column="2" />
+
+        <TextView
+            android:text="golLocal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtgolLocal"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtestado"
+            android:layout_toLeftOf="@+id/imgescudoVisita"
+            android:layout_row="5"
+            android:layout_column="3" />
+
+        <TextView
+            android:text="hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txthora"
+            android:layout_alignBaseline="@+id/txtidPartido"
+            android:layout_alignBottom="@+id/txtidPartido"
+            android:layout_alignParentStart="true"
+            android:layout_row="0"
+            android:layout_column="3" />
+
+        <TextView
+            android:text="golVisita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtgolVisita"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtgolLocal"
+            android:layout_toLeftOf="@+id/imgescudoVisita"
+            android:layout_row="4"
+            android:layout_column="3" />
+
+    </GridLayout>
+
+
+</RelativeLayout>

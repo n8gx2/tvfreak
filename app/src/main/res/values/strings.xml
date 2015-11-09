@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TVFreak</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_partido">PartidoActivity</string>
+</resources>

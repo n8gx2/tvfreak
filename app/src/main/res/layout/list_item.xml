@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:id="@+id/list_item">
+
+    <!-- Name Label -->
+
+    <TextView
+        android:id="@+id/txtFecha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#5866bd"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="txtFecha"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgLocal"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/txtFecha"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="false"
+        android:layout_marginRight="10dp" />
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/imgVisita"
+        android:src="@mipmap/ic_launcher"
+        android:layout_below="@+id/imgLocal"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentStart="false"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:id="@+id/txtEquipoLocal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#bd6813"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="txtEquipoLocal"
+        android:layout_below="@+id/txtFecha"
+        android:layout_toRightOf="@+id/imgLocal"
+        android:layout_toEndOf="@+id/imgLocal" />
+
+    <TextView
+        android:id="@+id/txtEquipoVisita"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#bd6813"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="txtEquipoVisita"
+        android:layout_below="@+id/imgLocal"
+        android:layout_toRightOf="@+id/imgVisita"
+        android:layout_toEndOf="@+id/imgVisita" />
+
+    <TextView
+        android:id="@+id/txtGolLocal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#43bd00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="txtGolLocal"
+        android:layout_above="@+id/imgVisita"
+        android:layout_toRightOf="@+id/imgLocal"
+        android:layout_toEndOf="@+id/imgLocal" />
+
+    <TextView
+        android:id="@+id/txtGolVisita"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+        android:paddingTop="6dip"
+        android:textColor="#43bd00"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:text="txtGolVisita"
+        android:layout_alignBottom="@+id/imgVisita"
+        android:layout_toRightOf="@+id/imgVisita"
+        android:layout_toEndOf="@+id/imgVisita" />
+
+    <!-- Email label -->
+
+    <!-- Mobile number label -->
+
+</RelativeLayout>
